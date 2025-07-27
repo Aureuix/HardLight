@@ -3,7 +3,7 @@
 # SPDX-FileCopyrightText: 2020 Decappi
 # SPDX-FileCopyrightText: 2020 Hugo Laloge
 # SPDX-FileCopyrightText: 2020 Vera Aguilera Puerto
-# SPDX-FileCopyrightText: 2020 Víctor Aguilera Puerto
+# SPDX-FileCopyrightText: 2020 V�ctor Aguilera Puerto
 # SPDX-FileCopyrightText: 2020 lajolico
 # SPDX-FileCopyrightText: 2020 py01
 # SPDX-FileCopyrightText: 2020 windarkata
@@ -17,7 +17,7 @@
 # SPDX-FileCopyrightText: 2021 Swept
 # SPDX-FileCopyrightText: 2021 iczero
 # SPDX-FileCopyrightText: 2022 0x6273
-# SPDX-FileCopyrightText: 2022 Andreas Kämper
+# SPDX-FileCopyrightText: 2022 Andreas K�mper
 # SPDX-FileCopyrightText: 2022 Anthemic
 # SPDX-FileCopyrightText: 2022 August Eymann
 # SPDX-FileCopyrightText: 2022 BubblegumBlue
@@ -86,7 +86,7 @@
 # SPDX-FileCopyrightText: 2023 metalgearsloth
 # SPDX-FileCopyrightText: 2023 nmajask
 # SPDX-FileCopyrightText: 2023 ubis1
-# SPDX-FileCopyrightText: 2023 Арт
+# SPDX-FileCopyrightText: 2023 ???
 # SPDX-FileCopyrightText: 2024 Adrian16199
 # SPDX-FileCopyrightText: 2024 Alchebun
 # SPDX-FileCopyrightText: 2024 Alpaccalypse
@@ -222,6 +222,11 @@
   - type: StaticPrice
     price: 800
   - type: ResearchClient
+  - type: AutomationSlots # Goobstation
+    slots:
+    - !type:AutomatedMaterialStorage
+      input: AutomationSlotMaterials
+      output: null
   - type: TechnologyDatabase
   - type: MaterialStorageMagnetPickup # Frontier
     range: 0.30 # Frontier
@@ -482,6 +487,7 @@
     - CameraBoards
     - MechBoards
     - ShuttleBoards
+    - EngineeringBoardsGoob #Goob Factorio port
     - NFEngineeringBoards # Frontier
     - NFMedicalBoards # Frontier + Shitmed Change
     - NFServiceBoards # Frontier

@@ -72,6 +72,13 @@
   - AutolatheHyperConvectionMachineCircuitboard
   - ProtolatheHyperConvectionMachineCircuitboard
   - CircuitImprinterHyperConvectionMachineCircuitboard
+  # Begin Goobstation Additions
+  - UpgradeKitAutomation
+  - RoboticArmCircuitboard
+  - StorageBinCircuitboard
+  - InteractorCircuitboard
+  - ConstructorCircuitboard
+  # End Goobstation Additions
   - SheetifierMachineCircuitboard
   - EngineeringTechFabCircuitboard
   - MaterialSiloMachineCircuitboard # Frontier
