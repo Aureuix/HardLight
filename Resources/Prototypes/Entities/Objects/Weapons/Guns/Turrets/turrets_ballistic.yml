@@ -105,6 +105,9 @@
     fireRate: 1
     selectedMode: FullAuto
     soundGunshot: /Audio/Weapons/Xeno/alien_spitacid.ogg
+  - type: Construction
+    graph: ResinStructures
+    node: XenoTurret
   - type: HTN
     rootTask:
       task: TurretCompound

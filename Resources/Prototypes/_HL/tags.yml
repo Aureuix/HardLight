@@ -28,6 +28,9 @@
   id: NFSpeedLoaderPistol45
 
 - type: Tag
+  id: ResinStructures
+
+- type: Tag
   id: NFMagazineRifle20
 
 - type: Tag
@@ -298,3 +301,7 @@
 
 - type: Tag
   id: SpeedLoaderBulletFoam
+
+# Batteries
+- type: Tag
+  id: PowerCellHigh

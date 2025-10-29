@@ -241,7 +241,6 @@
     - FootstepSound
     - CanPilot
     - SiliconEmotes
-    - Unimplantable
     - SiliconMob
   - type: Emoting
   - type: GuideHelp

@@ -269,6 +269,13 @@
   id: NFWeaponRifleAssaultM90GrenadeLauncherExpedition
   name: worn M90 rifle
 
+- type: entity # HL
+  parent:
+  - BaseExpeditionWeaponTier3Syndicate
+  - WeaponRifleAk
+  #  categories: [ HideSpawnMenu ]
+  id: WeaponRifleAkExpedition
+  name: worn AKM
 ## Snipers
 - type: entity
   parent:

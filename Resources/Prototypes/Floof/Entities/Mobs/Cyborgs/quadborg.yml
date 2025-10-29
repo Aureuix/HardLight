@@ -27,7 +27,13 @@
       movement:
         state: quadsprite
   - type: Stripping
+  - type: Strap
+    position: Stand
+    buckleOffset: "0,0.5"
   - type: Sanitized
+  - type: Hands 
+  - type: Cuffable
+  - type: ComplexInteraction
   - type: IntrinsicRadioTransmitter
     channels:
     - Security
@@ -323,6 +329,7 @@
       tags:
       - BorgModuleGeneric
       - BorgModuleService
+      - BorgModuleJanitor #HL
       - BorgModuleSyndicate
       - BorgModuleSyndicateAssault
     hasMindState: quadspriteservl

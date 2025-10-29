@@ -21,6 +21,9 @@
     key: walls
     base: resin
   - type: XenoNestSurface
+  - type: Construction
+    graph: ResinStructures
+    node: WallXenoResin
 
 - type: entity
   parent: WallXenoResin
@@ -35,6 +38,9 @@
   - type: IconSmooth
     key: walls
     base: thickresin
+  - type: Construction
+    graph: ResinStructures
+    node: WallXenoResinThick
 
 - type: entity
   parent: CMBaseWallXeno
@@ -71,6 +77,9 @@
         - GlassLayer
         density: 1000
   - type: XenoNestSurface
+  - type: Construction
+    graph: ResinStructures
+    node: WallXenoMembrane
 
 - type: entity
   parent: WallXenoMembrane
@@ -93,3 +102,6 @@
   - type: IconSmooth
     key: walls
     base: thickmembrane
+  - type: Construction
+    graph: ResinStructures
+    node: WallXenoMembraneThick

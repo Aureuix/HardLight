@@ -32,7 +32,7 @@ public sealed partial class XenoEggComponent : Component
     public string OpenedState = "egg_opened";
 
     [DataField, AutoNetworkedField]
-    public EntProtoId Spawn = "MobXenoLarva";
+    public EntProtoId Spawn = "XenoEggSpawner";
 }
 
 [Serializable, NetSerializable]

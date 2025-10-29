@@ -1,18 +1,14 @@
-﻿- type: entity
-  id: DoorXenoResin # TODO CM14 make them only buildable next to other resin walls
-  parent: BaseStructure
+- type: entity
+  parent: CMBaseXenoStructure
+  id: DoorXenoResin # TODO RMC14 make them only buildable next to other resin walls
   name: resin door
+  description: That's a resin door.
   placement:
     mode: SnapgridCenter
   components:
-  - type: MeleeSound
-    soundGroups:
-      Brute:
-        path:
-          "/Audio/Weapons/smash.ogg" # TODO CM14
   - type: InteractionOutline
   - type: Sprite
-    sprite: .CM14/Structures/Xenos/xeno_resin_door.rsi
+    sprite: _RMC14/Structures/Xenos/xeno_resin_door.rsi
     layers:
     - state: resin
       map: ["enum.DoorVisualLayers.Base"]
@@ -42,9 +38,9 @@
     openingSpriteState: resinopening
     closingSpriteState: resinclosing
     openSound:
-      path: /Audio/.CM14/Xeno/alien_resin_move1.ogg
+      path: /Audio/_RMC14/Xeno/alien_resin_move1.ogg
     closeSound:
-      path: /Audio/.CM14/Xeno/alien_resin_move2.ogg
+      path: /Audio/_RMC14/Xeno/alien_resin_move2.ogg
   - type: Appearance
   - type: Airtight
     fixVacuum: true
@@ -59,7 +55,7 @@
     thresholds:
     - trigger:
         !type:DamageTrigger
-        damage: 400 # TODO CM14 rebalance
+        damage: 600
       behaviors:
       - !type:DoActsBehavior
         acts: ["Destruction"]
@@ -73,5 +69,74 @@
   - type: Airlock
     emergencyAccessLayer: false
     animatePanel: false
-  - type: ApcPowerReceiver
-    powerLoad: 0
+    powered: true
+    openingSpriteState: closed_unlit
+    closingSpriteState: closed_unlit
+  # - type: XenoConstructionPlasmaCost
+    # plasma: 120
+  # - type: XenoStructureUpgradeable
+    # to: DoorXenoResinThick
+    # cost: 25
+  # - type: MeleeReceivedMultiplier
+    # xenoDamage:
+      # types:
+        # Slash: 600
+  # - type: XenoConstructionRequiresSupport
+  - type: ExplosionResistance
+    damageCoefficient: 7.5 # Doors take 15x explosive damage, resin doors reduce that by 50%
+  # - type: XenoConstruct
+    # destroyWeeds: false
+  # - type: ResinDoor
+  - type: Construction
+    graph: ResinStructures
+    node: DoorXenoResin
+
+- type: entity
+  parent: DoorXenoResin
+  id: DoorXenoResinThick
+  name: thick resin door
+  description: A thick resin door, which is more durable.
+  components:
+  - type: Sprite
+    sprite: _RMC14/Structures/Xenos/xeno_resin_door.rsi
+    layers:
+    - state: thick_resin
+      map: ["enum.DoorVisualLayers.Base"]
+    - state: closed_unlit
+      map: ["enum.DoorVisualLayers.BaseUnlit"]
+    - state: closed_unlit
+      map: ["enum.DoorVisualLayers.BaseBolted"]
+  - type: Door
+    crushDamage:
+      types:
+        Blunt: 15
+    openSpriteState: thick_resinopen
+    closedSpriteState: thick_resin
+    openingSpriteState: thick_resinopening
+    closingSpriteState: thick_resinclosing
+    openSound:
+      path: /Audio/_RMC14/Xeno/alien_resin_move1.ogg
+    closeSound:
+      path: /Audio/_RMC14/Xeno/alien_resin_move2.ogg
+  - type: Destructible
+    thresholds:
+    - trigger:
+        !type:DamageTrigger
+        damage: 900
+      behaviors:
+      - !type:DoActsBehavior
+        acts: ["Destruction"]
+  - type: IconSmooth
+    key: walls
+    mode: NoSprite
+  # - type: MeleeReceivedMultiplier
+    # xenoDamage:
+      # types:
+        # Slash: 900
+  # - type: XenoConstructionPlasmaCost
+    # plasma: 145
+  # - type: XenoStructureUpgradeable
+    # to: null
+  - type: Construction
+    graph: ResinStructures
+    node: DoorXenoResinThick

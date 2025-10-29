@@ -1,0 +1,179 @@
+- type: construction
+  id: XenoWeeds
+  graph: ResinStructures
+  startNode: start
+  targetNode: XenoWeeds
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked
+    
+- type: construction
+  id: WallXenoResin
+  graph: ResinStructures
+  startNode: start
+  targetNode: WallXenoResin
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: WallXenoMembrane
+  graph: ResinStructures
+  startNode: start
+  targetNode: WallXenoMembrane
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: DoorXenoResin
+  graph: ResinStructures
+  startNode: start
+  targetNode: DoorXenoResin
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: XenoNest
+  graph: ResinStructures
+  startNode: start
+  targetNode: XenoNest
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked
+
+- type: construction
+  id: XenoWeedsWall
+  graph: ResinStructures
+  startNode: start
+  targetNode: XenoWeedsWall
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked
+    
+- type: construction
+  id: WallXenoResinThick
+  graph: ResinStructures
+  startNode: start
+  targetNode: WallXenoResinThick
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked    
+
+- type: construction
+  id: WallXenoMembraneThick
+  graph: ResinStructures
+  startNode: start
+  targetNode: WallXenoMembraneThick
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked 
+
+- type: construction
+  id: DoorXenoResinThick
+  graph: ResinStructures
+  startNode: start
+  targetNode: DoorXenoResinThick
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked 
+
+- type: construction
+  id: XenoHiveWeeds
+  graph: ResinStructures
+  startNode: start
+  targetNode: XenoHiveWeeds
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked 
+
+- type: construction
+  id: XenoTurret
+  graph: ResinStructures
+  startNode: start
+  targetNode: XenoTurret
+  category: construction-category-Xeno
+  objectType: Structure
+  placementMode: SnapgridCenter
+  canRotate: false
+  canBuildInImpassable: false
+  entityWhitelist:
+    tags:
+    - ResinStructures
+  conditions:
+    - !type:TileNotBlocked 
+
+
+
+
