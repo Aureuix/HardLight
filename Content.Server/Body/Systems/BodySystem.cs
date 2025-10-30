@@ -80,7 +80,7 @@ public sealed class BodySystem : SharedBodySystem
             {
                 var layers = HumanoidVisualLayersExtension.Sublayers(layer.Value);
                 _humanoidSystem.SetLayersVisibility(
-                    bodyEnt, new[] { layer.Value }, visible: true, permanent: true, humanoid); // Shitmed Change
+                    (bodyEnt, humanoid), new[] { layer.Value }, true); // Shitmed Change
             }
         }
     }
