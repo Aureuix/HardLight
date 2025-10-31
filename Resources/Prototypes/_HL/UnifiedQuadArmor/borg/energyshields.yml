@@ -11,8 +11,8 @@
   name: ERTS-04 'AEGIS'
   description: Light, thin plates, wired with a mixture of emitters and heavy power conduits. This armour is designed to sync to a synthetics power-cell, and allow for the projection of short-range shields. Due to the aftermarket nature of these modifications, they replace a synthetic's internal light mechanisms and switch.
   components:
-  - type: Contraband
-    severity: Class1
+  #- type: Contraband
+   # severity: Class1
   - type: Sprite
     sprite: _HL/Objects/BorgArmor/physarmor/borglightarmor.rsi
   - type: ExplosionResistance
@@ -33,10 +33,10 @@
       domePrototype: EnergyDomeSmallBlue
       canDeviceNetworkUse: false # No.
     - type: PowerCellDraw
-      drawRate: 2
+      drawRate: 0.1
       useRate: 0
     - type: UseDelay
-      delay: 10.0
+      delay: 3.0
 
 - type: entity
   parent: SyntheticBorgArmorLightShield #Inherit all changes from this. Hopefully will prevent compatability issues in the future
@@ -44,10 +44,10 @@
   name: ERTS-09 'ROTUNDAE'
   description: A heavier, chassis-mounted shield unit. Hooked directly into a synthetics power-cell, this one is more efficient at drawing charge, and projects a larger field, at the cost of movement capabilities due to the increased power draw. Due to the aftermarket nature of these modifications, they replace a synthetic's internal light mechanisms and switch.
   components:
-  - type: Contraband
-    severity: Class2
+  #- type: Contraband
+   # severity: Class2
     #This is annoying as fuck to deal with.
-    allowedDepartments: [ Security, Command ]
+    #allowedDepartments: [ Security, Command ]
   - type: Sprite
     sprite: _HL/Objects/BorgArmor/physarmor/borglightarmor.rsi
   - type: ExplosionResistance
@@ -71,10 +71,10 @@
       domePrototype: EnergyDomeMediumBlue
       canDeviceNetworkUse: false # No.
     - type: PowerCellDraw
-      drawRate: 2
+      drawRate: 0.2
       useRate: 0
     - type: UseDelay
-      delay: 10.0
+      delay: 3.0
 
 - type: entity
   parent: SyntheticBorgArmorLightShield #Inherit all changes from this. Hopefully will prevent compatability issues in the future
@@ -82,10 +82,10 @@
   name: ERTS-14 'FATMAN'
   description: The Gold Standard in aftermarket synth-mounted shield projectors. A heavy, robust unit designed to project a high-energy field over a large zone. Typically used as a means of pacifying riots; this shield actively attempts to encompass foe and ally alike. Due to the aftermarket nature of these modifications, they replace a synthetic's internal light mechanisms and switch.
   components:
-  - type: Contraband
-    severity: Class2
+  #- type: Contraband
+   # severity: Class2
     #This is annoying as fuck to deal with.
-    allowedDepartments: [ Security, Command ]
+    #allowedDepartments: [ Security, Command ]
   - type: Sprite
     sprite: _HL/Objects/BorgArmor/physarmor/borglightarmor.rsi
   - type: ExplosionResistance
@@ -93,10 +93,10 @@
   - type: Armor
     modifiers:
       coefficients:
-        Blunt: 1.2 # You are easier to tip over with brute force. Needed because you aren't shooting this borg to death.
-        Slash: 1
-        Piercing: 1
-        Heat: 1
+        Blunt: 0.5 # You are easier to tip over with brute force. Needed because you aren't shooting this borg to death.
+        Slash: 0.5
+        Piercing: 0.5
+        Heat: 0.5
         Radiation: 0 # Ditto to below
         Caustic: 0 # Synths shouldnt be taking caustic damage. Untreatable
   - type: ClothingSpeedModifier  # Stacks with other slowdowns. Be careful!
@@ -109,10 +109,10 @@
       domePrototype: EnergyDomeBigBlue
       canDeviceNetworkUse: false # No.
     - type: PowerCellDraw
-      drawRate: 2
+      drawRate: 0.3
       useRate: 0
     - type: UseDelay
-      delay: 10.0
+      delay: 3.0
 
 
 - type: entity
@@ -121,8 +121,8 @@
   name: ERPS-01 'PARA'
   description: Designed as a particular experiment between Zheng-Hu Pharmaceuticals and Interdyne Medical; this shield was designed to be fast, nimble, and a means of support for operatives in the field. Due to the extensive, and unique modifications to this shield set, it replaces a synthetic's flash lamp entirely.
   components:
-  - type: Contraband
-    severity: Class1
+  #- type: Contraband
+   # severity: Class1
   - type: Sprite
     sprite: _HL/Objects/BorgArmor/physarmor/borglightarmor.rsi
   - type: ExplosionResistance
@@ -146,7 +146,7 @@
       domePrototype: EnergyDomeHealing
       canDeviceNetworkUse: false # No.
     - type: PowerCellDraw
-      drawRate: 2
+      drawRate: 5
       useRate: 0
     - type: UseDelay
-      delay: 10.0
+      delay: 5.0
