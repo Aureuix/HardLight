@@ -78,6 +78,7 @@ using Content.Client.Sprite;
 using Content.Client.Stylesheets;
 using Content.Client.UserInterface.Systems.Guidebook;
 using Content.Client.UserInterface.Controls;
+using Content.Shared._Mono.Company;
 using Content.Shared.CCVar;
 using Content.Shared.Clothing;
 using Content.Shared.GameTicking;
@@ -878,7 +879,7 @@ namespace Content.Client.Lobby.UI
                             if (categoryButton.TraitsContainer.ChildCount >= 2)
                             {
                                 var maxPoints = category.MaxTraitPoints.Value;
-                                float pointsLeft = Math.Max(0, maxPoints - currentPoints);
+                                float pointsLeft = maxPoints - currentPoints;
                                 if (categoryButton.TraitsContainer.GetChild(0) is ProgressBar progressBar)
                                 {
                                     progressBar.Value = pointsLeft;
@@ -930,11 +931,11 @@ namespace Content.Client.Lobby.UI
                         SetHeight = 4f,
                         MinValue = 0,
                         MaxValue = maxPoints,
-                        Value = Math.Max(0, maxPoints - selectionCount),
+                        Value = maxPoints - selectionCount,
                         Margin = new Thickness(0, 0, 0, 2)
                     };
 
-                    float pointsLeft = Math.Max(0, maxPoints - selectionCount);
+                    float pointsLeft = maxPoints - selectionCount;
                     float percentRemaining = pointsLeft / maxPoints;
 
                     Color barColor;

@@ -71,6 +71,10 @@ humanoid-profile-editor-clear-all-traits-button = Clear All Traits
 humanoid-profile-editor-clear-all-traits-confirm = Confirm Clear
 humanoid-profile-editor-traits-default-category = Uncategorized
 
+# Mono
+humanoid-profile-editor-clear-all-traits-button = Clear All Traits
+humanoid-profile-editor-clear-all-traits-confirm = Confirm Clear
+
 trait-category-disabilities = Disabilities
 trait-category-speech = Accents
 trait-category-quirks = Quirks
