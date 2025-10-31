@@ -40,6 +40,7 @@
   - type: Hands
   - type: Cuffable
   - type: ComplexInteraction
+  - type: IdExaminable #HL. These have borg hands and ID slots again!
   - type: IntrinsicRadioTransmitter
     channels:
     - Security
