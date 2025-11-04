@@ -42,7 +42,6 @@
     sprintModifier: 0.75
   - type: GunRequiresWield
   - type: WieldedCrosshair
-  - type: WieldedCrosshair
   - type: WieldDelay
     baseDelay: 3
     modifiedDelay: 3
