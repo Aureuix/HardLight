@@ -1,3 +1,4 @@
+
 # SPDX-FileCopyrightText: 2025 Ark
 # SPDX-FileCopyrightText: 2025 Avalon
 # SPDX-FileCopyrightText: 2025 Blu
@@ -77,7 +78,6 @@
     requireNoGrid: true
     shape: arrow
     radarColor: "#1df1f5"
-
 # 57mm Dravon
 
 - type: entity
@@ -89,9 +89,10 @@
   - type: Projectile
     damage:
       types:
-        Structural: 820
         Blunt: 120
         Piercing: 210
+        Structural: 420
+
   - type: Sprite
     sprite: _Mono/Objects/SpaceArtillery/57_shell.rsi
     layers:
@@ -410,6 +411,7 @@
     shape: triangle
   - type: TimedDespawn
     lifetime: 6
+    lifetime: 25
   - type: PointLight
     color: "#FCBA03"
   - type: ExplodeOnTrigger
@@ -422,3 +424,4 @@
   - type: GatheringProjectile
   - type: MiningGatheringSoft
   - type: MiningGatheringHard
+
