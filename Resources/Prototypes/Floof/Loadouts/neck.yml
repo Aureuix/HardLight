@@ -27,7 +27,7 @@
   equipment:
     neck: ClothingNeckCollarEpi
     
-- type: loadout # HL - Moved to T1 so it actually shows in loadout
+- type: loadout # HL - Moved to T1
   id: FloofClothingCollarMed # DocNeck TODO: additional integration - BrigmedicNeck?
 effects:
   - !type:GroupLoadoutEffect
