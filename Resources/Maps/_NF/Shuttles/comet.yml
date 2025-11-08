@@ -428,7 +428,6 @@ entities:
         - node:
             cleanable: True
             angle: -1.5707963267948966 rad
-            angle: -1.5707963267948966 rad
             color: '#FFFFFFFF'
             id: DirtHeavyMonotile
           decals:
