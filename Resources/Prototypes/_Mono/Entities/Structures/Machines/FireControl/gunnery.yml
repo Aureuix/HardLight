@@ -197,12 +197,45 @@
     radarColor: "#FFFF33"
     scale: 1
 
+
+# Monolith : BaseComputerAiAccess
 - type: entity
   parent: BaseComputer
+  id: BaseComputerAiAccess
+  components:
+  - type: StationAiWhitelist
+  - type: Wires
+    boardName: wires-board-name-computer
+    layoutId: ComputerAi
+
+
+
+# Monolith : Gunnery Computer
+- type: entity
+  parent: BaseComputerAiAccess
   id: ComputerGunneryConsole
   name: gunnery control console
   description: Interfaces with the gunnery control server to operate ship weapons.
+  placement:
+    mode: SnapgridCenter
   components:
+  - type: ApcPowerReceiver
+    powerLoad: 200
+  - type: ExtensionCableReceiver
+  - type: ActivatableUIRequiresPower
+  - type: Sprite
+    sprite: _Mono/Structures/Machines/computers.rsi
+    layers:
+    - map: ["computerLayerBody"]
+      state: computer_not_rot
+    - map: ["computerLayerKeyboard"]
+      state: gunnery_keyboard
+    - map: ["computerLayerScreen"]
+      state: gunnery_screen
+    - map: ["computerLayerKeys"]
+      state: gunnery_keys
+    - map: [ "enum.WiresVisualLayers.MaintenancePanel" ]
+      state: generic_panel_open
   - type: FireControlConsole
   - type: ActivatableUI
     key: enum.FireControlConsoleUiKey.Key
