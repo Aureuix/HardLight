@@ -10,6 +10,7 @@
         Structural: 420
         Blunt: 100
         Piercing: 210
+  - type: ShipWeaponProjectile
   - type: RadarBlip
     scale: 2.5
     visibleFromOtherGrids: true
