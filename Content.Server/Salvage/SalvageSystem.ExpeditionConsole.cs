@@ -197,12 +197,10 @@ public sealed partial class SalvageSystem
 
         // Mark as claimed and active - console handles its own state
         data.ActiveMission = args.Index;
-        data.CanFinish = false; // Will be set to true when FTL completes
+        // Do not forcibly reset CanFinish here; preserve existing early-leave availability
 
         var mission = GetMission(missionparams.MissionType, _prototypeManager.Index<SalvageDifficultyPrototype>(missionparams.Difficulty), missionparams.Seed);
-        // No timer - missions are always available for independent consoles
-        data.NextOffer = _timing.CurTime + TimeSpan.FromSeconds(_cooldown);
-        data.CooldownTime = TimeSpan.FromSeconds(_cooldown);
+        // Do not modify offer timers on claim to avoid regenerating/changing offers prematurely
 
         UpdateConsole((uid, component));
 
