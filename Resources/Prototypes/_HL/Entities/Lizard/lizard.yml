@@ -1,0 +1,45 @@
+- type: entity
+  id: HL_LizardHead
+  parent: BaseMobCarp
+  name: lizard head
+  components:
+  - type: Sprite
+    sprite: _HL/Lizard/lizard.rsi
+    state: lizardheadclosed
+  - type: TrailLeader
+  - type: LizardSegments
+
+- type: entity
+  id: HL_LizardBody
+  name: lizard body
+  components:
+  - type: Sprite
+    sprite: _HL/Lizard/lizard.rsi
+    state: segment
+  - type: TrailLeader
+  - type: TrailFollower
+    delay: 6
+    smoothFactor: 0.3
+
+- type: entity
+  id: HL_LizardBody2
+  name: lizard body
+  components:
+  - type: Sprite
+    sprite: _HL/Lizard/lizard.rsi
+    state: segment
+  - type: TrailLeader
+  - type: TrailFollower
+    delay: 6
+    smoothFactor: 0.3
+
+- type: entity
+  id: HL_LizardTailTip
+  name: lizard tail tip
+  components:
+  - type: Sprite
+    sprite: _HL/Lizard/lizard.rsi
+    state: tip
+  - type: TrailFollower
+    delay: 6
+    smoothFactor: 0.3
