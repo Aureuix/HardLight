@@ -73,9 +73,9 @@
       allowedEmotes: [ 'RMCSkrellPeep', 'RMCSkrellAnger', 'RMCSkrellTrill', 'RMCSkrellWarble' ]
     - type: Vocal
       sounds:
-        Male: MaleHuman
-        Unsexed: FemaleHuman
-        Female: FemaleHuman
+        Male: RMCMaleSkrell
+        Unsexed: RMCFemaleSkrell
+        Female: RMCFemaleSkrell
     - type: Sprite
       netsync: false
       noRot: true
