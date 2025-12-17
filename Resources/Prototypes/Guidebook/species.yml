@@ -36,6 +36,7 @@
     - Avali
     - Feroxi
     - Kitsune # DeltaV
+    - Skrell
 
 - type: guideEntry
   id: Arachnid
@@ -119,4 +120,10 @@
   id: Shadekin
   name: species-name-shadekin
   text: "/ServerInfo/Guidebook/Mobs/Shadekin.xml"
+
+- type: guideEntry
+  id: Skrell
+  name: species-name-skrell
+  text: "/ServerInfo/Guidebook/Mobs/Skrell.xml"
+
 
