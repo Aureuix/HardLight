@@ -1,14 +1,14 @@
 - type: gameMap
   id: Rad
   mapName: 'RadStation'
-  mapPath: /Maps/Floof/radstation.yml # Floofstation
-  minPlayers: 35
+  mapPath: /Maps/radstation.yml # Floofstation
+  minPlayers: 0
   stations:
     RadStation:
       stationProto: StandardNanotrasenStation
       components:
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/emergency_neol.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationNameSetup
           mapNameTemplate: '{0} RadStation {1}'
           nameGenerator:

@@ -1,8 +1,8 @@
 - type: gameMap
   id: Hammurabi
   mapName: 'Hammurabi'
-  mapPath: /Maps/Floof/hammurabi.yml # Floofstation
-  minPlayers: 50
+  mapPath: /Maps/hammurabi.yml # Floofstation
+  minPlayers: 0
   stations:
     Hammurabi:
       stationProto: StandardNanotrasenStation
@@ -13,7 +13,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'DV'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Centipede.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationJobs
           availableJobs:
           #civilian

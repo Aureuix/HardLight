@@ -1,15 +1,15 @@
 - type: gameMap
   id: Glacier
   mapName: Glacier
-  mapPath: /Maps/Floof/glacier.yml # Floofstation
-  minPlayers: 15
+  mapPath: /Maps/glacier.yml # Floofstation
+  minPlayers: 0
   maxPlayers: 70
   stations:
     Glacier:
       stationProto: StandardNanotrasenStation
       components:
       - type: StationEmergencyShuttle #floofstation
-        emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml #floofstation
+        emergencyShuttlePath: /Maps/Shuttles/emergency.yml #floofstation
       - type: StationNameSetup
         mapNameTemplate: '{0} Glacier Station {1}'
         nameGenerator:

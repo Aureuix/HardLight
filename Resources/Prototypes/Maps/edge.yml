@@ -1,8 +1,8 @@
 - type: gameMap
   id: Edge
   mapName: 'Edge'
-  mapPath: /Maps/Floof/edge.yml # Floofstation
-  minPlayers: 10
+  mapPath: /Maps/edge.yml # Floofstation
+  minPlayers: 0
   maxPlayers: 80
   stations:
     Edge:

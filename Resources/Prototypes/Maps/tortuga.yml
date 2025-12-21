@@ -1,8 +1,8 @@
 - type: gameMap
   id: Tortuga
   mapName: 'Tortuga'
-  mapPath: /Maps/Floof/tortuga.yml # FloofStation
-  minPlayers: 50
+  mapPath: /Maps/tortuga.yml # FloofStation
+  minPlayers: 0
   stations:
     Tortuga:
       stationProto: StandardNanotrasenStation
@@ -13,7 +13,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'DV'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Seal.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationJobs
           availableJobs:
           #civilian

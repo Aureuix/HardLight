@@ -1,7 +1,7 @@
 - type: gameMap
   id: Shoukou
   mapName: 'Shōkō'
-  mapPath: /Maps/Floof/shoukou.yml # FloofStation
+  mapPath: /Maps/shoukou.yml # FloofStation
   minPlayers: 0
   maxPlayers: 60
   stations:
@@ -14,7 +14,7 @@
           !type:NanotrasenNameGenerator
           prefixCreator: 'DV'
       - type: StationEmergencyShuttle
-        emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Delta.yml
+        emergencyShuttlePath: /Maps/Shuttles/emergency.yml
       - type: StationJobs
         availableJobs:
           # MISSING JOB PROTOTYPE

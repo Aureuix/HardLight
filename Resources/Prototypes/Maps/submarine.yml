@@ -1,8 +1,8 @@
 - type: gameMap
   id: Submarine
   mapName: 'Submarine'
-  mapPath: /Maps/Floof/submarine.yml
-  minPlayers: 60
+  mapPath: /Maps/submarine.yml
+  minPlayers: 0
   stations:
     Submarine:
       stationProto: StandardNanotrasenStation
@@ -13,7 +13,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'DV'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Propeller.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationJobs
           availableJobs:
           #civilian

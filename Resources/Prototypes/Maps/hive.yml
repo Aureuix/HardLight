@@ -1,8 +1,8 @@
 - type: gameMap
   id: TheHive
   mapName: 'The Hive'
-  mapPath: /Maps/Floof/hive.yml # Floofstation
-  minPlayers: 30
+  mapPath: /Maps/hive.yml # Floofstation
+  minPlayers: 0
   #maxPlayers: 80 Temporary maybe
   stations:
     TheHive:
@@ -14,7 +14,7 @@
             !type:NanotrasenNameGenerator
             prefixCreator: 'DV'
         - type: StationEmergencyShuttle
-          emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_Seal.yml
+          emergencyShuttlePath: /Maps/Shuttles/emergency.yml
         - type: StationJobs
           availableJobs:
           #civilian

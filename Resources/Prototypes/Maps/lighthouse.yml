@@ -1,15 +1,15 @@
 - type: gameMap
   id: Lighthouse
   mapName: Lighthouse
-  mapPath: /Maps/Floof/lighthouse.yml # Floofstation
-  minPlayers: 15
+  mapPath: /Maps/lighthouse.yml # Floofstation
+  minPlayers: 0
   maxPlayers: 55
   stations:
     Lighthouse:
       stationProto: StandardNanotrasenStation
       components:
       - type: StationEmergencyShuttle
-        emergencyShuttlePath: /Maps/Shuttles/DeltaV/NTES_BC20.yml
+        emergencyShuttlePath: /Maps/Shuttles/emergency.yml
       - type: StationNameSetup
         mapNameTemplate: '{0} Lighthouse {1}'
         nameGenerator:
