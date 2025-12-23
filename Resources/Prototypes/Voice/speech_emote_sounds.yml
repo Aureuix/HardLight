@@ -480,8 +480,8 @@
   params:
     variation: 0.05
   sounds:
-    Scream:
-      collection: SiliconScreams # HardLight (Liv)
+    Scream: # HardLight
+      collection: SiliconScreams # HardLight
     Beep:
       path: /Audio/Machines/twobeep.ogg
     Chime:
@@ -518,8 +518,8 @@
   params:
     variation: 0.05
   sounds:
-    Scream:
-      collection: SiliconScreams # HardLight (Liv)
+    Scream: # HardLight
+      collection: SiliconScreams # HardLight
     Laugh:
       path: /Audio/Voice/Silicon/syndieborg_laugh.ogg
 
