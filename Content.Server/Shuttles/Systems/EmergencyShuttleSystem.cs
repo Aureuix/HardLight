@@ -74,7 +74,8 @@ public sealed partial class EmergencyShuttleSystem : EntitySystem
 
     private bool _emergencyShuttleEnabled;
 
-    private static readonly ProtoId<TagPrototype> DockTag = new("DockEmergency");
+    [ValidatePrototypeId<TagPrototype>]
+    private const string DockTag = "DockEmergency";
 
     private EntityUid? _singletonColcommMap;
     private EntityUid? _singletonColcommGrid;

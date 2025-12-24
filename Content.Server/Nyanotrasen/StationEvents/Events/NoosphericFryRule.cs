@@ -43,7 +43,7 @@ internal sealed class NoosphericFryRule : StationEventSystem<NoosphericFryRuleCo
     {
         base.Started(uid, component, gameRule, args);
 
-        List<(EntityUid wearer, EntityUid hat, TinfoilHatComponent worn)> psionicList = new();
+        List<(EntityUid wearer, TinfoilHatComponent worn)> psionicList = new();
 
         var query = EntityQueryEnumerator<PsionicInsulationComponent, MobStateComponent>();
         while (query.MoveNext(out var psion, out _, out _))
@@ -57,22 +57,21 @@ internal sealed class NoosphericFryRule : StationEventSystem<NoosphericFryRuleCo
             if (!TryComp<TinfoilHatComponent>(headItem, out var tinfoil))
                 continue;
 
-            // TryGetSlotEntity returned true so headItem is non-null; capture its non-null value
-            psionicList.Add((psion, headItem.Value, tinfoil));
+            psionicList.Add((psion, tinfoil));
         }
 
         foreach (var pair in psionicList)
         {
             if (pair.worn.DestroyOnFry)
             {
-                QueueDel(pair.hat);
+                QueueDel(pair.worn.Owner);
                 Spawn("Ash", Transform(pair.wearer).Coordinates);
-                _popupSystem.PopupEntity(Loc.GetString("psionic-burns-up", ("item", pair.hat)), pair.wearer, Filter.Pvs(pair.hat), true, Shared.Popups.PopupType.MediumCaution);
-                _audioSystem.PlayPvs("/Audio/Effects/lightburn.ogg", pair.hat);
+                _popupSystem.PopupEntity(Loc.GetString("psionic-burns-up", ("item", pair.worn.Owner)), pair.wearer, Filter.Pvs(pair.worn.Owner), true, Shared.Popups.PopupType.MediumCaution);
+                _audioSystem.PlayPvs("/Audio/Effects/lightburn.ogg", pair.worn.Owner);
             } else
             {
-                _popupSystem.PopupEntity(Loc.GetString("psionic-burn-resist", ("item", pair.hat)), pair.wearer, Filter.Pvs(pair.hat), true, Shared.Popups.PopupType.SmallCaution);
-                _audioSystem.PlayPvs("/Audio/Effects/lightburn.ogg", pair.hat);
+                _popupSystem.PopupEntity(Loc.GetString("psionic-burn-resist", ("item", pair.worn.Owner)), pair.wearer, Filter.Pvs(pair.worn.Owner), true, Shared.Popups.PopupType.SmallCaution);
+                _audioSystem.PlayPvs("/Audio/Effects/lightburn.ogg", pair.worn.Owner);
             }
 
             DamageSpecifier damage = new();

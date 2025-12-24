@@ -83,7 +83,7 @@ public sealed class ScaleCommand : ToolshedCommand
             humanoid.Width = width;
 
             // mark the component as dirty so the new values are networked to clients immediately
-            entManager.Dirty(ent, humanoid);
+            humanoid.Dirty();
 
             yield return ent;
         }
@@ -103,7 +103,7 @@ public sealed class ScaleCommand : ToolshedCommand
             humanoid.Width *= factor;
 
             // mark the component as dirty so the new values are networked to clients immediately
-            entManager.Dirty(ent, humanoid);
+            humanoid.Dirty();
 
             yield return ent;
         }
@@ -125,7 +125,7 @@ public sealed class ScaleCommand : ToolshedCommand
             humanoid.Width *= factor;
 
             // mark the component as dirty so the new values are networked to clients immediately
-            entManager.Dirty(ent, humanoid);
+            humanoid.Dirty();
 
             yield return ent;
         }

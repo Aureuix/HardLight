@@ -66,7 +66,8 @@ public sealed partial class EmergencyShuttleSystem
 
     private CancellationTokenSource? _roundEndCancelToken;
 
-    private static readonly ProtoId<AccessLevelPrototype> EmergencyRepealAllAccess = new("EmergencyShuttleRepealAll");
+    [ValidatePrototypeId<AccessLevelPrototype>]
+    private const string EmergencyRepealAllAccess = "EmergencyShuttleRepealAll";
     private static readonly Color DangerColor = Color.Red;
 
     /// <summary>

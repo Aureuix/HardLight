@@ -27,7 +27,7 @@ public sealed class OrphanedGridCleanupTest
         await server.WaitAssertion(() =>
         {
             // Create a test map
-            var mapEnt = mapSystem.CreateMap(out var mapId);
+            var mapId = mapManager.CreateMap();
             var gridEnt = mapManager.CreateGridEntity(mapId);
             var grid = entityManager.GetComponent<MapGridComponent>(gridEnt);
             
@@ -75,7 +75,7 @@ public sealed class OrphanedGridCleanupTest
         await server.WaitAssertion(() =>
         {
             // Create a test map
-            var mapEnt = mapSystem.CreateMap(out var mapId);
+            var mapId = mapManager.CreateMap();
             var gridEnt = mapManager.CreateGridEntity(mapId);
             var grid = entityManager.GetComponent<MapGridComponent>(gridEnt);
             
@@ -128,7 +128,7 @@ public sealed class OrphanedGridCleanupTest
             cleanupSystem.SetEnabled(false);
             
             // Create a test map with a small grid
-            var mapEnt = mapSystem.CreateMap(out var mapId);
+            var mapId = mapManager.CreateMap();
             var gridEnt = mapManager.CreateGridEntity(mapId);
             var grid = entityManager.GetComponent<MapGridComponent>(gridEnt);
             
