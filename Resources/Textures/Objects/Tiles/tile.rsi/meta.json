@@ -615,6 +615,9 @@
             "name": "plasmarble-inhand-right",
             "directions": 4
         },
+		{
+            "name": "xenoborg-floor"
+        },
         {
             "name": "uranium-marble"
         },
