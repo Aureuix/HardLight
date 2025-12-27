@@ -28,7 +28,7 @@
     - !type:HTNCompoundTask
       task: ShuttleDeedTurretAttackCompound
 
-# Attack compound - fire at target using ship weapons system
+# Attack compound - move toward target and fire at it
 - type: htnCompound
   id: ShuttleDeedTurretAttackCompound
   branches:
@@ -37,16 +37,28 @@
       key: TargetCoordinates
     tasks:
     - !type:HTNPrimitiveTask
-      operator: !type:ShipFireGunsOperator
-        shutdownState: TaskFinished
+      operator: !type:ShipMoveToOperator
+        shutdownState: PlanFinished
         removeKeyOnFinish: false
-        leadingAccuracy: 0.6
-        requireAnchored: false
-        maxTargetingRange: 75
         targetKey: TargetCoordinates
+        range: 50
+        rangeTolerance: 25
+        maxTargetingRange: 500
+        requireAnchored: false
+        avoidCollisions: true
+        finishOnCollide: false
+        leadingEnabled: true
       services:
       - !type:UtilityService
         id: TargetsService
         proto: NearbyShuttleDeedGridTargets
         key: Target
         coordinatesKey: TargetCoordinates
+    - !type:HTNPrimitiveTask
+      operator: !type:ShipFireGunsOperator
+        shutdownState: PlanFinished
+        removeKeyOnFinish: false
+        leadingAccuracy: 0.6
+        requireAnchored: false
+        maxTargetingRange: 75
+        targetKey: TargetCoordinates
