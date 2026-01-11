@@ -38,12 +38,12 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMIFilled
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - BorgModuleAdvancedTool
       - BorgModuleConstruction
-      - BorgModuleRCD
+      - BorgModuleXenoRCD
       - BorgModuleCable
       - XenoborgModuleAccessBreaker
       - XenoborgModuleFireExtinguisher
@@ -137,12 +137,10 @@
         - cell_slot
       - !type:DoActsBehavior
         acts: [ "Destruction" ]
-  - type: Repairable
-    doAfterDelay: 25 # more HP, more time to heal
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMIFilled
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - XenoborgModuleTool
@@ -201,7 +199,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMIFilled
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - XenoborgModuleTool
@@ -259,7 +257,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMIFilled
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - XenoborgModuleTool
@@ -282,7 +280,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMI
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - BorgModuleAdvancedTool
@@ -305,7 +303,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMI
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - XenoborgModuleTool
@@ -325,7 +323,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMI
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - XenoborgModuleTool
@@ -345,7 +343,7 @@
   - type: ContainerFill
     containers:
       borg_brain:
-      - MMI
+      - PositronicBrain
       borg_module:
       - XenoborgModuleBasic
       - XenoborgModuleTool

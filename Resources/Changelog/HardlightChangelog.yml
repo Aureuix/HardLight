@@ -157,3 +157,194 @@ Entries:
       message: Falling asleep no longer makes you fall out of a chair or bed
   id: 18
   time: '2026-01-03T01:40:59.0000000+00:00'
+- author: Mariiibo
+  changes:
+    - type: Fix
+      message: Fixed the rest of the guidebook errors.
+  id: 19
+  time: '2026-01-03T18:11:58.0000000+00:00'
+- author: carccborg
+  changes:
+    - type: Tweak
+      message: >-
+        Reduced thruster plume damage from 1400 Heat per second to 140 Heat per
+        second.
+  id: 20
+  time: '2026-01-03T18:12:40.0000000+00:00'
+- author: pankakakas
+  changes:
+    - type: Fix
+      message: Avali Genital Markings Render!
+  id: 21
+  time: '2026-01-03T18:13:29.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Rename TSFMC items to ColSec
+    - type: Add
+      message: Sensors to tracking implants
+  id: 22
+  time: '2026-01-04T04:34:22.0000000+00:00'
+- author: carccborg
+  changes:
+    - type: Add
+      message: New markings for Thaven! Arm, leg, and dorsal fins.
+    - type: Add
+      message: Three new tails for Thaven
+    - type: Add
+      message: Added Angler bulb and Fairy fin markings for Thaven.
+    - type: Add
+      message: truly funky sprites for the base thaven
+    - type: Add
+      message: truly funky sprites for many thaven markings
+    - type: Tweak
+      message: Increased the amount of slots for Thaven arm, leg and chest markings
+    - type: Tweak
+      message: existing thaven tails touched up
+    - type: Tweak
+      message: sharkminnow eyeliner is now light before the multiply layer
+    - type: Fix
+      message: fixed thaven neck, eye, ear, mask, and head offsets to be pixel perfect
+    - type: Fix
+      message: Item offsets now work properly on Thaven in the customization screen.
+  id: 23
+  time: '2026-01-04T20:13:15.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Added Knife rigging to merc loadouts.
+    - type: Add
+      message: Added medipen cases printable at medfabs and purchasable on uplinks.
+  id: 24
+  time: '2026-01-04T22:53:16.0000000+00:00'
+- author: carccborg
+  changes:
+    - type: Tweak
+      message: Adjusted shuttle walls' `reflectProb` to 0.2 (20%).
+  id: 25
+  time: '2026-01-07T04:23:11.0000000+00:00'
+- author: carccborg
+  changes:
+    - type: Fix
+      message: Fire spreading when entities are colliding now works properly.
+  id: 26
+  time: '2026-01-07T04:28:11.0000000+00:00'
+- author: Wuffindy
+  changes:
+    - type: Fix
+      message: upgraded backpacks grid should be fixed now
+  id: 27
+  time: '2026-01-07T04:30:34.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Fix
+      message: >-
+        Power Forks can now go into industrial mechs and small mechs e.g. VIM
+        and HAMTR.
+    - type: Add
+      message: >-
+        Exosuit mining drills now have a 60-degree wide-swing, making them
+        faster miners than handheld versions. 
+    - type: Fix
+      message: The diamond exosuit drill can now properly break supercompacted rock.
+    - type: Add
+      message: >-
+        Diamond drills now ignore resistances. Melee a Clarke with an exosuit
+        diamond drill at your own risk.
+    - type: Fix
+      message: The ResistanceBypass melee component now actually works.
+    - type: Fix
+      message: >-
+        The Ripley Mk.II and Clarke now move at regular speeds when under
+        gravity.
+    - type: Fix
+      message: >-
+        Mechs can now wide-swing melee weapons as the raycast no longer collides
+        with the mech itself.
+  id: 28
+  time: '2026-01-07T04:31:01.0000000+00:00'
+- author: Makeshift
+  changes:
+    - type: Tweak
+      message: >-
+        Reported a more recent version of Elkridge, with a more thorough set of
+        changes to fit Hardlight.
+  id: 29
+  time: '2026-01-07T04:41:20.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: 'Adds new high tier traits as well as some bug fixes. '
+  id: 30
+  time: '2026-01-07T06:45:36.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Tweak
+      message: Mech weapons can no longer be fired outside of a mech.
+  id: 31
+  time: '2026-01-07T06:47:30.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: >-
+        Added the ability to craft big ammo boxes for 3x the price of normal
+        ammo boxes.
+  id: 32
+  time: '2026-01-08T22:52:15.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Gave security roles roundstart FUCs
+  id: 33
+  time: '2026-01-09T03:46:12.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Add
+      message: Mechs should now have flashlights so they can see.
+  id: 34
+  time: '2026-01-10T12:44:06.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Medical Quadborgs are now able to dispense candies for patients.
+    - type: Add
+      message: >-
+        Encryption keys are now able to be used on Quadborgs to give them new
+        radio channels.
+    - type: Add
+      message: Quadborgs are finally allowed to cum.
+    - type: Add
+      message: >-
+        New Cyborg Storage Modules are now able to be made at a Protolathe once
+        Bluespace Storage has been researched, allowing Cyborgs to carry bags
+        courtesy of Nookie.
+    - type: Add
+      message: >-
+        Security Quadborgs are now able to be printed at SEC techfabs, albeit
+        without custom sprites or names, so they will appear as normal Cyborg
+        parts.
+    - type: Remove
+      message: Removed several starting comms channels from quadborgs.
+    - type: Remove
+      message: The Cyborg Detective Module no longer comes with a free Detective PDA.
+    - type: Tweak
+      message: >-
+        Changed IPC welding healing to be faster but heal slightly less, made
+        LV, MV, and HV heal incrementally more burn at the cost of slightly
+        longer doafters, and gave Cyborgs the same healing system as IPC.
+    - type: Tweak
+      message: Quadborg job roles now spawn with PDAs.
+    - type: Tweak
+      message: Quadborgs are now able to unlock themselves.
+    - type: Tweak
+      message: All Quadborgs now have an additional module slot.
+    - type: Tweak
+      message: >-
+        IPC no longer spawn with an encryption key, but are now able to spawn
+        with and wear headsets.
+    - type: Fix
+      message: >-
+        Fixed Scientists, Security Officers, and Station Engineers spawning with
+        two PDAs.
+  id: 35
+  time: '2026-01-10T12:49:09.0000000+00:00'
