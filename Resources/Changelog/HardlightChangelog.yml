@@ -515,3 +515,17 @@ Entries:
       message: Eaglerock Become Station fixed for billionth time
   id: 53
   time: '2026-01-17T01:43:11.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Remove
+      message: Removes chameleon belt!
+  id: 54
+  time: '2026-01-17T03:57:28.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Added a green qipao.
+    - type: Add
+      message: Adds the coyote clothes to the loudout options.
+  id: 55
+  time: '2026-01-17T19:20:23.0000000+00:00'
