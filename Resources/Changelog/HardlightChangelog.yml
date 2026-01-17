@@ -501,3 +501,9 @@ Entries:
       message: Changed shuttle AI behavior
   id: 51
   time: '2026-01-17T01:12:12.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Add
+      message: Added custom species
+  id: 52
+  time: '2026-01-17T01:17:21.0000000+00:00'
