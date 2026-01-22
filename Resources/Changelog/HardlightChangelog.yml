@@ -603,3 +603,19 @@ Entries:
         floof-station
   id: 65
   time: '2026-01-22T04:38:15.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Adds multiple optimizations
+    - type: Add
+      message: cyan lizard shunt
+    - type: Remove
+      message: Removed name limitations
+    - type: Tweak
+      message: tweaked event rolls and spawn rates
+    - type: Tweak
+      message: tweaked rules
+    - type: Fix
+      message: 'Fixed Atmos calculation and spacing. '
+  id: 66
+  time: '2026-01-22T05:16:51.0000000+00:00'
