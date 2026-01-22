@@ -104,7 +104,9 @@
     - Common
     - Science
   - type: ZombieImmune
-  - type: WeldingHealable
+  - type: Repairable
+    doAfterDelay: 10
+    allowSelfRepair: false
   - type: BorgChassis
   - type: LockingWhitelist
     blacklist:
@@ -255,21 +257,10 @@
     interactFailureString: petting-failure-generic-cyborg
     interactSuccessSound:
       path: /Audio/Ambience/Objects/periodic_beep.ogg
-  #region Starlight
-  #- type: CyborgSparkEffect
-  #- type: StationAIShunt #Starlight allow shunting into all borgs
-  #- type: BorgSwitchableSubtype # Afterlight change
-  #- type: Crawler
   - type: Blindable
   - type: EyeProtection
   - type: Stripping
-  #endregion
-  #- type: MobCollision # AFTERLIGHT
-  #- type: ALMobCollision # AFTERLIGHT
-  #- type: ALPose # AFTERLIGHT
-  # - type: ALMobInteractable # AFTERLIGHT (disabled: component not present)
-  # - type: CanBeVorePredator # AFTERLIGHT (disabled: component not present)
-  # - type: CanBeVorePrey # AFTERLIGHT (disabled: component not present)
+  - type: Vore
 
 - type: entity
   abstract: true
@@ -440,6 +431,8 @@
     - Xenoborg
     - Binary
     - Common
+  - type: Repairable
+    doAfterDelay: 10 # 25% more HP, so 30% more time to heal
   - type: BorgChassis
     maxModules: 10
     hasMindState: robot_e
