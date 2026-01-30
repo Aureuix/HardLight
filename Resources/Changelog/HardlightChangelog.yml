@@ -820,3 +820,11 @@ Entries:
       message: Synths and IPC can no longer be cloned.
   id: 86
   time: '2026-01-30T17:11:20.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Fix
+      message: >-
+        Fixed audio lingering from energy melee weapons when no longer
+        activated.
+  id: 87
+  time: '2026-01-30T17:11:38.0000000+00:00'
