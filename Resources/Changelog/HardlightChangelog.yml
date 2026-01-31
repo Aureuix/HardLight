@@ -838,3 +838,13 @@ Entries:
       message: 'removed the contractor and pilot roles from station selection. '
   id: 88
   time: '2026-01-31T00:29:27.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Tweak
+      message: >-
+        Stacked produce now splits itself when being inserted into a microwave,
+        electric range, or food-o-mat.
+    - type: Fix
+      message: You can cook food again.
+  id: 89
+  time: '2026-01-31T00:33:21.0000000+00:00'
