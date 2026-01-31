@@ -860,3 +860,19 @@ Entries:
       message: added exped disk printer to every map
   id: 91
   time: '2026-01-31T03:17:31.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Tweak
+      message: >-
+        Plant Analyzer now automatically refreshes if left open so you can watch
+        mutations in real-time.
+    - type: Tweak
+      message: >-
+        Plant Analyzer window now remains open even if you switch hands or put
+        it away.
+    - type: Fix
+      message: >-
+        Plant Analyzer UI now works properly when scanning an item without the
+        window already open.
+  id: 92
+  time: '2026-01-31T06:03:20.0000000+00:00'
