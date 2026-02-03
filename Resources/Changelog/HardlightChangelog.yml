@@ -898,3 +898,9 @@ Entries:
       message: Fixed turrets ignoring shielded entities
   id: 95
   time: '2026-02-03T19:33:43.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Added Early launch back!
+  id: 96
+  time: '2026-02-03T19:35:32.0000000+00:00'
