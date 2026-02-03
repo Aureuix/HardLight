@@ -4,9 +4,12 @@ using Content.Server.GameTicking;
 using Content.Server.Station.Components;
 using Content.Server.Station.Systems;
 using Content.Server.StationEvents.Components;
+using Content.Shared.GameTicking;
 using Content.Shared.GameTicking.Components;
 using JetBrains.Annotations;
 using Robust.Server.Player;
+using Robust.Shared.Enums;
+using Robust.Shared.Player;
 
 namespace Content.Server.StationEvents.Events;
 
@@ -15,6 +18,20 @@ public sealed class DynamicJobAllocationRule : StationEventSystem<DynamicJobAllo
 {
     [Dependency] private readonly StationJobsSystem _stationJobs = default!;
     [Dependency] private readonly IPlayerManager _playerManager = default!;
+
+    public override void Initialize()
+    {
+        base.Initialize();
+
+        SubscribeLocalEvent<PlayerSpawnCompleteEvent>(OnPlayerSpawnComplete);
+        _playerManager.PlayerStatusChanged += OnPlayerStatusChanged;
+    }
+
+    public override void Shutdown()
+    {
+        base.Shutdown();
+        _playerManager.PlayerStatusChanged -= OnPlayerStatusChanged;
+    }
 
     protected override void Started(EntityUid uid, DynamicJobAllocationRuleComponent component, GameRuleComponent gameRule, GameRuleStartedEvent args)
     {
@@ -31,6 +48,26 @@ public sealed class DynamicJobAllocationRule : StationEventSystem<DynamicJobAllo
         if (component.TimeSinceLastCheck >= component.CheckInterval)
         {
             component.TimeSinceLastCheck = 0f;
+            AdjustJobSlots(uid, component);
+        }
+    }
+
+    private void OnPlayerSpawnComplete(PlayerSpawnCompleteEvent ev)
+    {
+        UpdateActiveRules();
+    }
+
+    private void OnPlayerStatusChanged(object? sender, SessionStatusEventArgs e)
+    {
+        if (e.NewStatus == SessionStatus.Disconnected || e.NewStatus == SessionStatus.InGame)
+            UpdateActiveRules();
+    }
+
+    private void UpdateActiveRules()
+    {
+        var query = QueryActiveRules();
+        while (query.MoveNext(out var uid, out _, out var component, out _))
+        {
             AdjustJobSlots(uid, component);
         }
     }
