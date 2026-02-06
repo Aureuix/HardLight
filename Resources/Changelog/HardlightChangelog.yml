@@ -932,3 +932,13 @@ Entries:
         and Space Dragons now have working night vision, as well.
   id: 99
   time: '2026-02-06T20:00:16.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Added the Harbor Master.
+    - type: Tweak
+      message: Freelancers now are under the Harbor Master.
+    - type: Add
+      message: Gives the freelancers their own comms.
+  id: 100
+  time: '2026-02-06T21:02:55.0000000+00:00'
