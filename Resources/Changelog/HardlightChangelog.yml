@@ -1026,3 +1026,21 @@ Entries:
       message: Fixed freelancer headsets not having freelance radio.
   id: 107
   time: '2026-02-09T23:33:30.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Tweak
+      message: >-
+        All lockers, wall lockers, and suit storages will now once again save on
+        ship save.
+    - type: Tweak
+      message: Vending machines will now once again save on ship save.
+    - type: Fix
+      message: >-
+        Entities with MindContainers (sentient machines, plushies, pAI, etc)
+        should no longer interfere with ship saving.
+    - type: Fix
+      message: >-
+        ChemMasters should no longer mix solutions contained within their buffer
+        when saved on a ship.
+  id: 108
+  time: '2026-02-09T23:34:31.0000000+00:00'
