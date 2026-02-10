@@ -1090,3 +1090,25 @@ Entries:
       message: Fixed xenoborg targeting
   id: 113
   time: '2026-02-10T07:38:57.0000000+00:00'
+- author: Suraru
+  changes:
+    - type: Tweak
+      message: >-
+        Changed rad collectors checking every tick to every 5s. Should earn us
+        between 10-15% TPS
+    - type: Tweak
+      message: >-
+        Changes the PTK-1500e "Matter Dematerializer" to be C1, instead of C3,
+        since you can literally get it from the vending machine
+    - type: Fix
+      message: Robotic arm running every tick to what I assume was a coding error
+    - type: Tweak
+      message: >-
+        Changes StartableMachineSystem to every second to reduce what can be
+        thousands of of checks a second down to hundreds
+    - type: Tweak
+      message: >-
+        Checks payout every second now, instead of every tick. Reduces thousands
+        of checks a second, to like, 80 tops. 
+  id: 114
+  time: '2026-02-10T07:39:29.0000000+00:00'
