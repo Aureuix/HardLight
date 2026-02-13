@@ -1132,3 +1132,9 @@ Entries:
       message: Removes the SS14 decal from all wizden maps since they were broken
   id: 117
   time: '2026-02-13T09:20:10.0000000+00:00'
+- author: Suraru
+  changes:
+    - type: Add
+      message: Pink Hoodies
+  id: 118
+  time: '2026-02-13T09:22:21.0000000+00:00'
