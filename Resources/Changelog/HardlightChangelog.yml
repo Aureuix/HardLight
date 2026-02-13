@@ -1126,3 +1126,9 @@ Entries:
       message: Turned the vacant office near Bridge into a HM office on Eaglerock.
   id: 116
   time: '2026-02-13T09:18:47.0000000+00:00'
+- author: Suraru
+  changes:
+    - type: Remove
+      message: Removes the SS14 decal from all wizden maps since they were broken
+  id: 117
+  time: '2026-02-13T09:20:10.0000000+00:00'
