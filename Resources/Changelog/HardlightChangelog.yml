@@ -1118,3 +1118,11 @@ Entries:
       message: Added pool toy trait!
   id: 115
   time: '2026-02-13T09:17:55.0000000+00:00'
+- author: Generic_eagle
+  changes:
+    - type: Add
+      message: Added EMPs to the Aultman Industries Stalker and Deterrence
+    - type: Tweak
+      message: Turned the vacant office near Bridge into a HM office on Eaglerock.
+  id: 116
+  time: '2026-02-13T09:18:47.0000000+00:00'
