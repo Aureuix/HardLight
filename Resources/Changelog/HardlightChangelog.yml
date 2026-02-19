@@ -1224,3 +1224,11 @@ Entries:
       message: 'Custom lights no longer revert to default lights on save/load. '
   id: 127
   time: '2026-02-19T04:58:43.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Tweak
+      message: made genetic injectors unsavable.
+    - type: Tweak
+      message: made genetic console undeconstructable.
+  id: 128
+  time: '2026-02-19T04:59:03.0000000+00:00'
