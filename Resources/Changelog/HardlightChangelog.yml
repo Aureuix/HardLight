@@ -1232,3 +1232,9 @@ Entries:
       message: made genetic console undeconstructable.
   id: 128
   time: '2026-02-19T04:59:03.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Adds the pissing trait. It... lets you piss...
+  id: 129
+  time: '2026-02-19T05:01:15.0000000+00:00'
