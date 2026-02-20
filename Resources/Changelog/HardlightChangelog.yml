@@ -1250,3 +1250,9 @@ Entries:
       message: Added brainwashing/hypnotism/mind-control via the neuralyzer
   id: 131
   time: '2026-02-19T05:02:04.0000000+00:00'
+- author: Generic-Eagle
+  changes:
+    - type: Add
+      message: Added the Bumble Bee to the Security shipyard
+  id: 132
+  time: '2026-02-19T05:02:28.0000000+00:00'
