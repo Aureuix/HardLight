@@ -1200,3 +1200,59 @@ Entries:
       message: Added per character apartment system
   id: 126
   time: '2026-02-18T00:02:16.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Client-sided wall-based ambient occlusion for soft shadows around walls.
+    - type: Add
+      message: >-
+        Grids that would reasonably have roofs now have roofs that block weather
+        effects and gas overlays.
+    - type: Tweak
+      message: >-
+        AME fuel jars and rad collector plasma tanks now persist on save/load
+        when contained within an AME/rad collector.
+    - type: Tweak
+      message: Crates can once again be anchored.
+    - type: Fix
+      message: False walls will no longer revert states when welded during save/load.
+    - type: Fix
+      message: >-
+        Airlocks, gas canisters, lockers, and crates no longer lose custom
+        paintjobs on save/load.
+    - type: Fix
+      message: 'Custom lights no longer revert to default lights on save/load. '
+  id: 127
+  time: '2026-02-19T04:58:43.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Tweak
+      message: made genetic injectors unsavable.
+    - type: Tweak
+      message: made genetic console undeconstructable.
+  id: 128
+  time: '2026-02-19T04:59:03.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Adds the pissing trait. It... lets you piss...
+  id: 129
+  time: '2026-02-19T05:01:15.0000000+00:00'
+- author: Suraru
+  changes:
+    - type: Tweak
+      message: You can now eat money
+  id: 130
+  time: '2026-02-19T05:03:00.0000000+00:00'
+- author: Notarin
+  changes:
+    - type: Add
+      message: Added brainwashing/hypnotism/mind-control via the neuralyzer
+  id: 131
+  time: '2026-02-19T05:02:04.0000000+00:00'
+- author: Generic-Eagle
+  changes:
+    - type: Add
+      message: Added the Bumble Bee to the Security shipyard
+  id: 132
+  time: '2026-02-19T05:02:28.0000000+00:00'
