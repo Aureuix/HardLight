@@ -1296,3 +1296,9 @@ Entries:
         outside of the Crew Monitor.
   id: 137
   time: '2026-02-21T02:45:19.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Synths now have unique insides.
+  id: 138
+  time: '2026-02-21T02:56:52.0000000+00:00'
