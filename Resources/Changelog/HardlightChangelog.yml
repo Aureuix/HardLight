@@ -1280,3 +1280,19 @@ Entries:
       message: Food-O-Mat works now.
   id: 136
   time: '2026-02-21T02:44:20.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Fix
+      message: >-
+        Crew Monitors/Manifests should now correctly display active
+        crew/Freelancers who persist through round changes.
+    - type: Fix
+      message: >-
+        Dynamic slot allocation for the Freelancer job should now actually work
+        dynamically.
+    - type: Fix
+      message: >-
+        Job data is now correctly displayed and should no longer give Unknowns
+        outside of the Crew Monitor.
+  id: 137
+  time: '2026-02-21T02:45:19.0000000+00:00'
