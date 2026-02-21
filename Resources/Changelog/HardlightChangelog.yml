@@ -1274,3 +1274,9 @@ Entries:
       message: Neuralyzer no longer works on mindshielded people.
   id: 135
   time: '2026-02-21T02:43:28.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Fix
+      message: Food-O-Mat works now.
+  id: 136
+  time: '2026-02-21T02:44:20.0000000+00:00'
