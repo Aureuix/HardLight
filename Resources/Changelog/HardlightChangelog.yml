@@ -1268,3 +1268,9 @@ Entries:
       message: more pillows!
   id: 134
   time: '2026-02-21T02:33:51.0000000+00:00'
+- author: Notarin
+  changes:
+    - type: Tweak
+      message: Neuralyzer no longer works on mindshielded people.
+  id: 135
+  time: '2026-02-21T02:43:28.0000000+00:00'
