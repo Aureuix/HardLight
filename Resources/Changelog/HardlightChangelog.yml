@@ -1256,3 +1256,9 @@ Entries:
       message: Added the Bumble Bee to the Security shipyard
   id: 132
   time: '2026-02-19T05:02:28.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Moths and Mothroaches are now able to flap their wings.
+  id: 133
+  time: '2026-02-21T02:25:35.0000000+00:00'
