@@ -16,6 +16,7 @@
     - Vox
     - Sheleg # Different meds
     - Avali # Amoxla user
+    - Resomi
     inverted: true
 
 - type: loadoutEffectGroup
