@@ -1372,3 +1372,33 @@ Entries:
       message: Grids getting deleted also deleting players
   id: 145
   time: '2026-02-24T03:14:56.0000000+00:00'
+- author: TrylobyteWasTaken
+  changes:
+    - type: Fix
+      message: Pick-n-Pack machines now contain the correct ammunition types.
+  id: 146
+  time: '2026-02-24T20:48:41.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Adds the explosive and cryostasis darts.
+  id: 147
+  time: '2026-02-24T20:52:33.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added resomi changes per bounty request
+  id: 148
+  time: '2026-02-24T20:52:52.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'fixed the bounds for the apartment system '
+  id: 149
+  time: '2026-02-24T21:02:32.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: Added a Livyathan plushie!
+  id: 150
+  time: '2026-02-24T21:37:39.0000000+00:00'
