@@ -1378,3 +1378,9 @@ Entries:
       message: Pick-n-Pack machines now contain the correct ammunition types.
   id: 146
   time: '2026-02-24T20:48:41.0000000+00:00'
+- author: warcrazed11
+  changes:
+    - type: Add
+      message: Adds the explosive and cryostasis darts.
+  id: 147
+  time: '2026-02-24T20:52:33.0000000+00:00'
