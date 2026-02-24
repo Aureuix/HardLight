@@ -1338,3 +1338,19 @@ Entries:
       message: NanoChat!
   id: 142
   time: '2026-02-24T02:45:15.0000000+00:00'
+- author: NotLivyathan
+  changes:
+    - type: Add
+      message: >-
+        Secure closets and previously lockable lockers/crates can now be locked
+        to an ID for extra security.
+    - type: Tweak
+      message: >-
+        Popups from world actions should no longer overlay on top of one another
+        and ruin readability.
+    - type: Fix
+      message: >-
+        Entities with PryingComponent that aren't exclusively for prying will no
+        longer attempt to pry outside of alt+click.
+  id: 143
+  time: '2026-02-24T02:51:32.0000000+00:00'
