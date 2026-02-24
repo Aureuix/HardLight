@@ -1384,3 +1384,9 @@ Entries:
       message: Adds the explosive and cryostasis darts.
   id: 147
   time: '2026-02-24T20:52:33.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Add
+      message: Added resomi changes per bounty request
+  id: 148
+  time: '2026-02-24T20:52:52.0000000+00:00'
