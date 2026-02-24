@@ -24,7 +24,6 @@ using Robust.Shared.Audio.Systems;
 using Robust.Shared.Network;
 using Robust.Shared.Map.Components;
 using Robust.Shared.Prototypes;
-using Content.Shared.Hands.EntitySystems; // HardLight
 
 namespace Content.Shared.Doors.Systems;
 
@@ -47,7 +46,6 @@ public abstract partial class SharedDoorSystem : EntitySystem
     [Dependency] protected readonly SharedPopupSystem Popup = default!;
     [Dependency] private readonly SharedMapSystem _mapSystem = default!;
     [Dependency] private readonly SharedPowerReceiverSystem _powerReceiver = default!;
-    [Dependency] private readonly SharedHandsSystem _handsSystem = default!; // HardLight
 
 
     public static readonly ProtoId<TagPrototype> DoorBumpTag = "DoorBumpOpener";
@@ -235,28 +233,10 @@ public abstract partial class SharedDoorSystem : EntitySystem
         if (args.Handled || !args.Complex || !door.ClickOpen)
             return;
 
-        if (!TryToggleDoor(uid, door, args.User, predicted: true)
-            && CanAttemptPryFallback(door.State)) // HardLight
-        // HardLight start
-        {
-            if (_handsSystem.TryGetActiveItem(args.User, out var activeItem)
-                && TryComp<PryingComponent>(activeItem, out var activePry))
-            {
-                _pryingSystem.TryPry(uid, args.User, out _, activeItem.Value, activePry!);
-            }
-            else
-            {
-                _pryingSystem.TryPry(uid, args.User, out _);
-            }
-        }
-        // HardLight end
+        if (!TryToggleDoor(uid, door, args.User, predicted: true))
+            _pryingSystem.TryPry(uid, args.User, out _);
 
         args.Handled = true;
-    }
-
-    private static bool CanAttemptPryFallback(DoorState state) // HardLight
-    {
-        return state is DoorState.Closed;
     }
 
     private void OnPryTimeModifier(EntityUid uid, DoorComponent door, ref GetPryTimeModifierEvent args)

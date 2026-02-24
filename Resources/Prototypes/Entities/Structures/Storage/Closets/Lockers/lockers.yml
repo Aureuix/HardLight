@@ -47,7 +47,7 @@
 
 - type: entity
   id: LockerSalvageSpecialist
-  parent: [IdLockableBaseLogistics, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: salvage specialist's equipment
   description: Nevermind the pickaxe.
   components:
@@ -103,7 +103,7 @@
 # Electrical supplies
 - type: entity
   id: LockerElectricalSupplies
-  parent: [IdLockableBaseEngineering, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: electrical supplies locker
   components:
   - type: Appearance
@@ -117,7 +117,7 @@
 # Welding supplies
 - type: entity
   id: LockerWeldingSupplies
-  parent: [IdLockableBaseEngineering, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: welding supplies locker
   components:
   - type: Appearance
@@ -131,7 +131,7 @@
 # Atmos tech
 - type: entity
   id: LockerAtmospherics
-  parent: [IdLockableBaseEngineering, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: atmospheric technician's locker
   components:
   - type: Appearance
@@ -145,7 +145,7 @@
 # Engineer
 - type: entity
   id: LockerEngineer
-  parent: [IdLockableBaseEngineering, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: engineer's locker
   components:
   - type: Appearance
@@ -219,7 +219,7 @@
 # Medicine
 - type: entity
   id: LockerMedicine
-  parent: [IdLockableBaseMedical, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: medicine locker
   description: Filled to the brim with medical junk.
   components:
@@ -234,7 +234,7 @@
 # Medical doctor
 - type: entity
   id: LockerMedical
-  parent: [IdLockableBaseMedical, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: medical doctor's locker
   components:
   - type: Appearance
@@ -248,7 +248,7 @@
 # Paramedic
 - type: entity
   id: LockerParamedic
-  parent: [IdLockableBaseMedical, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: paramedic's locker
   components:
   - type: Appearance
@@ -263,7 +263,7 @@
 # Chemical
 - type: entity
   id: LockerChemistry
-  parent: [IdLockableBaseMedical, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: chemical locker
   components:
   - type: Appearance
@@ -304,7 +304,7 @@
 
 - type: entity
   id: LockerScientist
-  parent: [IdLockableBaseResearch, LockerBase] # Floof - added id lock parent
+  parent: LockerBase
   name: scientist's locker
   categories: [ HideSpawnMenu ] # Frontier
   components:
@@ -347,7 +347,7 @@
 # Brigmedic
 - type: entity
   id: LockerBrigmedic
-  parent: [IdLockableBaseSecurity, LockerBaseSecure] # Floof - added id lock parent
+  parent: LockerBaseSecure
   name: brigmedic's locker
   components:
   - type: Appearance
@@ -361,7 +361,7 @@
 # Security Officer
 - type: entity
   id: LockerSecurity
-  parent: [IdLockableBaseSecurity, LockerBaseSecure] # Floof - added id lock parent
+  parent: LockerBaseSecure
   name: security officer's locker
   components:
   - type: Appearance
@@ -507,7 +507,7 @@
 # Detective
 - type: entity
   id: LockerDetective
-  parent: [IdLockableBaseSecurity, LockerBooze] # Floof - added id lock parent
+  parent: LockerBooze
   name: detective's cabinet
   description: Usually cold and empty... like your heart.
   components:

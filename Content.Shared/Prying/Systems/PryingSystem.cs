@@ -10,7 +10,6 @@ using Content.Shared.Verbs;
 using Robust.Shared.Audio.Systems;
 using Robust.Shared.Serialization;
 using PryUnpoweredComponent = Content.Shared.Prying.Components.PryUnpoweredComponent;
-using Content.Shared.Interaction.Components; // HardLight
 
 namespace Content.Shared.Prying.Systems;
 
@@ -39,21 +38,7 @@ public sealed class PryingSystem : EntitySystem
         if (args.Handled)
             return;
 
-        var usingPryTool = TryComp<PryingComponent>(args.Used, out var toolPry); // HardLight
-
-        // HardLight start
-        // Prevent prying while the door is already in the process of opening or closing.
-        if (!usingPryTool && comp.State is DoorState.Opening or DoorState.Closing)
-            return;
-
-        // Prevent prying on normal interact if the user has the ComplexInteraction component.
-        if (!usingPryTool && HasComp<ComplexInteractionComponent>(args.User))
-            return;
-
-        args.Handled = usingPryTool
-            ? TryPry(uid, args.User, out _, args.Used, toolPry!)
-            : TryPry(uid, args.User, out _, args.Used);
-        // HardLight end
+        args.Handled = TryPry(uid, args.User, out _, args.Used);
     }
 
     private void OnDoorAltVerb(EntityUid uid, DoorComponent component, GetVerbsEvent<AlternativeVerb> args)
@@ -61,28 +46,14 @@ public sealed class PryingSystem : EntitySystem
         if (!args.CanInteract || !args.CanAccess)
             return;
 
-        // HardLight start
-        // Only show the pry verb if the user is using a pry tool or doesn't have the ComplexInteraction component.
-        EntityUid? tool = null;
-        if (TryComp<PryingComponent>(args.User, out _))
-        {
-            tool = args.User;
-        }
-        else if (args.Using is { } usingEnt && TryComp<PryingComponent>(usingEnt, out _))
-        {
-            tool = usingEnt;
-        }
-
-        if (tool == null)
-        // HardLight end
+        if (!TryComp<PryingComponent>(args.User, out _))
             return;
 
         args.Verbs.Add(new AlternativeVerb()
         {
             Text = Loc.GetString("door-pry"),
             Impact = LogImpact.Low,
-            Priority = 10, // HardLight
-            Act = () => TryPry(uid, args.User, out _, tool.Value), // HardLight: args.User<tool.Value
+            Act = () => TryPry(uid, args.User, out _, args.User),
         });
     }
 
@@ -93,21 +64,9 @@ public sealed class PryingSystem : EntitySystem
     {
         id = null;
 
-        // HardLight start
-        if (!TryComp<PryingComponent>(tool, out var comp))
+        PryingComponent? comp = null;
+        if (!Resolve(tool, ref comp, false))
             return false;
-
-        if (!comp.Enabled)
-            return false;
-
-        return TryPry(target, user, out id, tool, comp);
-        // HardLight end
-    }
-
-    // HardLight: This overload is used when we already know the tool has a PryingComponent, so we don't need to check again.
-    public bool TryPry(EntityUid target, EntityUid user, out DoAfterId? id, EntityUid tool, PryingComponent comp)
-    {
-        id = null; // HardLight
 
         if (!comp.Enabled)
             return false;
