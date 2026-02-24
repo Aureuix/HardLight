@@ -1390,3 +1390,9 @@ Entries:
       message: Added resomi changes per bounty request
   id: 148
   time: '2026-02-24T20:52:52.0000000+00:00'
+- author: fenndragon
+  changes:
+    - type: Fix
+      message: 'fixed the bounds for the apartment system '
+  id: 149
+  time: '2026-02-24T21:02:32.0000000+00:00'
