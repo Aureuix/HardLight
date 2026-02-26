@@ -166,7 +166,12 @@
       - !type:ReduceRotting
           seconds: 5
       - !type:HealthChange
+        - !type:ReagentThreshold
+          reagent: Mechanites
+          max: 5
         damage:
+          groups:
+            Brute: -4
           types:
             Blunt: -2
             Slash: -2
