@@ -1,0 +1,42 @@
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckChastityCage # Don't actually put things like this on your neck. Slotted to neck because its the best fit for accessories of this kind. :)
+  name: chastity cage
+  suffix: SelfUnremovable
+  desc: Keeps your bits between your legs. Where they belong.
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Clothing/Neck/Misc/shock.rsi
+  - type: Clothing
+    sprite: Nyanotrasen/Clothing/Neck/Misc/shock.rsi
+    equipDelay: 1
+    unequipDelay: 10
+  - type: SelfUnremovableClothing
+
+- type: entity
+  parent: ClothingNeckBase
+  id: ClothingNeckChastityCageShock
+  name: shock chastity cage
+  suffix: SelfUnremovable
+  desc: Ouch! 
+  components:
+  - type: Sprite
+    sprite: Nyanotrasen/Clothing/Neck/Misc/shock.rsi
+  - type: Clothing
+    sprite: Nyanotrasen/Clothing/Neck/Misc/shock.rsi
+    equipDelay: 1
+    unequipDelay: 10
+  - type: SelfUnremovableClothing
+  - type: ShockOnTrigger
+    damage: 1
+    duration: 7 # GIWTWM
+    cooldown: 3.5
+  - type: TriggerOnSignal
+  - type: DeviceNetwork
+    deviceNetId: Wireless
+    receiveFrequencyId: BasicDevice
+  - type: WirelessNetworkConnection
+    range: 200
+  - type: DeviceLinkSink
+    ports:
+    - Trigger
